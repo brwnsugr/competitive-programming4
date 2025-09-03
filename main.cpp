@@ -1,14 +1,14 @@
 #include <iostream>
 #include <ostream>
 
-#include "test.cpp"
-#include "math/PrimeNumber.h"
+#include "math/PrimeChecker.h"
 using namespace std;
 
 int main() {
-    PrimeNumber prime;
-    int res = prime.solve(10);
 
-    cout << res << endl;
+    vll r;
+    sieve(100000);
+    r = primeFactors((1LL << 31) - 1);
+    for (auto &pf : r) printf("> %lld\n", pf);
     return 0;
 }
