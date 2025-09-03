@@ -5,5 +5,5 @@
 #include "PrimeNumber.h"
 
 int PrimeNumber::solve(int x) {
-    return x * x * x * x;
+    return x * x * x * x * x;
 }
